@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Route, Swicth, Redirect } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -14,12 +14,18 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-
-      </header>
-
-    </div>
+    <>
+    <Header />
+      <Switch>
+        <Route exact path="/">
+          <Main />
+        </Route>
+        <Route path="landing">
+          <Landing />
+        </Route>
+      </Switch>
+    <Footer />
+    </>
   );
 }
 
