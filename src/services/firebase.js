@@ -1,6 +1,6 @@
 import firebase from "firebase/app";
-import "firebase/firebase-firestore";
 import "firebase/firebase-auth";
+import "firebase/firebase-firestore";
 
 
 const firebaseConfig = {
@@ -12,7 +12,7 @@ const firebaseConfig = {
     appId: "1:219669383110:web:b2f843e8d1862bdda294c7"
   };
 
-  firebase.initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
 
 // set up auth
 const auth = firebase.auth();
