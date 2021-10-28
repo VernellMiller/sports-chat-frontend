@@ -1,12 +1,7 @@
 import React from "react";
 import './App.css';
 
-import firebase from "firebase/app";
-import "firebase/firebase-firestore";
-import "firebase/firebase-auth";
 
-import { useAuthState } from "react-firebase-hooks/auth";
-import { useCollectionData } from "react-firebase-hooks/firestore";
 
 function App() {
   return (
@@ -14,8 +9,13 @@ function App() {
       <header className="App-header">
 
       </header>
+      {/* <section>
+        {user ? <Main /> : <landing />}
+      </section> */}
     </div>
   );
 }
+
+
 
 export default App;
