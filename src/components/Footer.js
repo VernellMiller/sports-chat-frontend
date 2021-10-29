@@ -1,8 +1,10 @@
+import { StyledFooter } from "../styles";
+
 const Footer = (props) => {
     return (
-        <footer>
-            <h1>footer</h1>
-        </footer>
+        <StyledFooter>
+            <p>Copyright &copy; All Rights Reserved Sports Chat {new Date().getFullYear()}</p>
+        </StyledFooter>
     );
 };
 
