@@ -18,7 +18,12 @@ function App() {
   const [ user, setUser ] = useState(null);
 
   useEffect(() => {
-    auth.onAuthStateChanged(user => setUser(user));
+    
+    const unsubscribe = auth.onAuthStateChanged(user => setUser(user));
+
+    // cleanup action - removes observer from memory when not needed  
+    return () => unsubscribe(); 
+
   }, [])
 
   return (
