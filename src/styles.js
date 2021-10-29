@@ -33,3 +33,10 @@ export const StyledHeader = styled.header`
         
     }
 `;
+
+export const StyledMain = styled.main`
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`;
