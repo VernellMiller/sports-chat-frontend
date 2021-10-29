@@ -28,4 +28,8 @@ export const StyledHeader = styled.header`
             }
         }
     }
+    img {
+        height: 600px;
+        
+    }
 `;
