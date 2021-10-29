@@ -42,5 +42,13 @@ export const StyledMain = styled.main`
     flex-grow: 1;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
+`;
+
+export const StyledFooter = styled.footer`
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    justify-content: center;
 `;
