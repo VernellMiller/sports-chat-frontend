@@ -18,7 +18,7 @@ function App() {
   const [ user, setUser ] = useState(null);
 
   useEffect(() => {
-    
+
     const unsubscribe = auth.onAuthStateChanged(user => setUser(user));
 
     // cleanup action - removes observer from memory when not needed  
@@ -28,7 +28,7 @@ function App() {
 
   return (
     <>
-    <Header />
+    <Header user={user}/>
       <Switch>
         <Route exact path="/">
           <Main />

@@ -10,10 +10,13 @@ const Header = (props) => {
             <h1>Header</h1>
             <nav>
                 <ul>
-                    <li>
-                        <Link to="/landing">Login</Link>
-                    </li>
-                    <li onClick={ logOut }>Logout</li>
+                    {
+                        props.user ? <li onClick={ logOut }>Logout</li>
+                        :
+                        <li>
+                            <Link to="/landing">Login</Link>
+                        </li>
+                    }
                 </ul>
             </nav>
         </StyledHeader>
