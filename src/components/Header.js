@@ -11,11 +11,16 @@ const Header = (props) => {
             <nav>
                 <ul>
                     {
-                        props.user ? <li onClick={ logOut }>Logout</li>
+                        props.user ? 
+                        <>
+                            <li>Nice to see you, {props.user.displayName}</li>
+                            <li onClick={ logOut }>Logout</li>
+                        </>
                         :
-                        <li>
-                            <Link to="/landing">Login</Link>
-                        </li>
+                        <>
+                        <li>Hello Stranger</li>
+                        <li><Link to="/landing">Login</Link></li>
+                        </>
                     }
                 </ul>
             </nav>
