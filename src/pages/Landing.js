@@ -1,4 +1,4 @@
-import { StyledMain } from "../styles";
+import { StyledMain } from "../styles.js";
 import { signIn } from "../services/firebase";
 
 const Landing = (props) => {
