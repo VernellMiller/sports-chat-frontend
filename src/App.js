@@ -4,6 +4,7 @@ import { Route, Switch, Redirect } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Banner from "./components/Banner";
+import Sidebar from "./components/Sidebar";
 
 import Landing from "./pages/Landing";
 import Main from "./pages/Main";
@@ -32,6 +33,7 @@ function App() {
       <Switch>
         <Route exact path="/">
           <Main />
+          <Sidebar />
         </Route>
         <Route path="/landing">
           <Landing />

@@ -1,12 +1,14 @@
 import styled from "styled-components";
 
+
+
 export const StyledHeader = styled.header`
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-left: 1rem;
     height: 5rem;
-    background-color: black, 1.0;
+    background-color: rgba(0,0,0,0);
 
     nav {
         display: flex;
@@ -44,6 +46,14 @@ export const StyledMain = styled.main`
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    background-image: ${props => props.chase ? `url(${props.chase})` : 'none'};
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 
+    h1 {
+        color: white;
+    }
+}
 `;
 
 export const StyledFooter = styled.footer`
@@ -52,3 +62,8 @@ export const StyledFooter = styled.footer`
     height: 5rem;
     justify-content: center;
 `;
+
+export const StyledLanding = styled.main`
+
+`;
+
