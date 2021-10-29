@@ -1,9 +1,13 @@
+import { StyledMain } from "../styles";
+import { signIn } from "../services/firebase";
+
 const Landing = (props) => {
     return (
-        <main>
+        <StyledMain>
             <h1>Landing</h1>
-        </main>
+            <button onClick={signIn}>Sign in with Google</button>
+        </StyledMain>
     );
-};
+}
 
 export default Landing;
