@@ -14,6 +14,13 @@ import { auth } from "./services/firebase";
 import './App.css';
 
 function App() {
+
+  const [ user, setUser ] = useState(null);
+
+  useEffect(() => {
+    auth.onAuthStateChanged(user => setUser(user));
+  }, [])
+
   return (
     <>
     <Header />
@@ -21,7 +28,7 @@ function App() {
         <Route exact path="/">
           <Main />
         </Route>
-        <Route path="landing">
+        <Route path="/landing">
           <Landing />
         </Route>
       </Switch>
