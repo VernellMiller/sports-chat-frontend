@@ -18,6 +18,10 @@ export const StyledHeader = styled.header`
                 margin-right: 1.5rem;
                 font-size: 0.7rem;
                 font-weight: 700;
+                img {
+                    height: 50px;
+                    border-radius: 50%
+                }
                 a {
                     text-decoration: none;
                     color: inherit;

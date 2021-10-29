@@ -14,11 +14,17 @@ const Header = (props) => {
                         props.user ? 
                         <>
                             <li>Nice to see you, {props.user.displayName}</li>
+                            <li>
+                                <img 
+                                    src={props.user.photoURL}
+                                    alt={props.user.displayName}
+                                />
+                            </li>
                             <li onClick={ logOut }>Logout</li>
                         </>
                         :
                         <>
-                        <li>Hello Stranger</li>
+                        <li>Hello Stranger.</li>
                         <li><Link to="/landing">Login</Link></li>
                         </>
                     }
