@@ -29,8 +29,8 @@ function App() {
 
   return (
     <>
-      <Sidebar />
       <Header user={user}/>
+      <Sidebar />
         <Switch>
           <Route exact path="/">
             <Main />
