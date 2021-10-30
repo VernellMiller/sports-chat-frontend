@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import * as FaIcons from "react-icons/fa";
@@ -15,7 +15,8 @@ const NavIcon = styled(Link)`
 `;
 
 const SidebarNav = styled.nav`
-    background-color: black;
+    border-style: solid black;
+    /* background-color: black; */
     width: 250px;
     height: 100vh;
 `;
@@ -26,6 +27,11 @@ const SidebarWrap = styled.div`
 `;
 
 const Sidebar = () => {
+
+    const [ sidebar, setSidebar ] = useState(false)
+
+    const ShowSidebar = () => setSidebar(!sidebar)
+
     return (
        <>
          <NavIcon to="#">
