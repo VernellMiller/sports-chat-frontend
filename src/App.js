@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Banner from "./components/Banner";
 import Sidebar from "./components/Sidebar";
+import Chat from "./components/Chat";
 
 import Landing from "./pages/Landing";
 import Main from "./pages/Main";
@@ -32,9 +33,10 @@ function App() {
       <Header user={user}/>
       <Sidebar />
       <Banner />
+          <Main />
+      <Chat />
       <Switch>
         <Route exact path="/">
-          <Main />
         </Route>
         <Route path="/landing">
           <Landing />
