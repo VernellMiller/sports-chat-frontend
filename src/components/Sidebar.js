@@ -31,10 +31,10 @@ const SidebarNav = styled.nav`
     /* z-index: 10; */
 `;
 
-// const SidebarWrap = styled.div`
-//     width: 100%;
+const SidebarWrap = styled.div`
+    width: 100%;
 
-// `;
+`;
 
 const Sidebar = () => {
     const [ sidebar, setSidebar ] = useState(false);
@@ -44,17 +44,17 @@ const Sidebar = () => {
     return (
        <>
          <NavIcon to="#">
-            <FaIcons.FaBars />
+            <FaIcons.FaBars onClick={showSidebar}/>
         </NavIcon>
         <SidebarNav sidebar={sidebar}>
-            {/* <SidebarWrap>
+            <SidebarWrap>
                 <NavIcon to="#">
-                    <AiIcons.AiOutlineClose onClick={showSidebar}/>
+                    <AiIcons.AiOutlineClose onClick={showSidebar} />
                 </NavIcon>
-                {SidebarData.map((item, index) => {
+                {/* {SidebarData.map((item, index) => {
                     return <SubMenu item={item} key={index} /> 
-                })};
-            </SidebarWrap> */}
+                })}; */}
+            </SidebarWrap>
             
         </SidebarNav>
         
