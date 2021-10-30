@@ -1,8 +1,10 @@
+import { StyledChat } from "../styles";
+
 const Chat = (props) => {
     return (
-        <article>
+        <div>
             <h1>Chat</h1>
-        </article>
+        </div>
     );
 };
 
