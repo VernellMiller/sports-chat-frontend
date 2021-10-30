@@ -4,11 +4,21 @@ import { Link } from "react-router-dom";
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 
+
+const NavIcon = styled(Link)`
+    margin-left:2rem;
+`;
+
 const Sidebar = () => {
     return (
-        <div>
-            sidebar
-        </div>
+       <>
+       
+            <NavIcon to="#">
+                <FaIcons.FaBars />
+
+            </NavIcon>
+        
+       </>
     )
 }
 
