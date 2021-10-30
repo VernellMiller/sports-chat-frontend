@@ -26,12 +26,19 @@ const SidebarLabel = styled.span`
 `;
 
 const SubMenu = ({item}) => {
+    const [ subnav, setSubnav ] = useState(false)
+
+    const showSubnav = () => setSubnav(!subnav)
+
     return (
       <>
-        <SidebarLink to={item.path}>
+        <SidebarLink to={item.path} onClick={item.subnav && showSubnav}>
         <div>
           {item.icon}
           <SidebarLabel>{item.title}</SidebarLabel>
+        </div>
+        <div>
+            {item.SubNav && subnav ? item.iconOpened : item.SubNav ? item.iconClosed : null}
         </div>
         </SidebarLink>
       </>
