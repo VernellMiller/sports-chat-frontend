@@ -5,7 +5,19 @@ import styled from 'styled-components';
 
 const SidebarLink = styled(Link)`
   display: flex;
-  color: #e1e9fc;
+  color: black;
+  justify-content: space-between;
+  padding: 20px;
+  list-style: none;
+  height: 60px;
+  text-decoration: none;
+  font-size: 20px;
+
+  &:hover {
+      background: #252832;
+      border-left: 4px solid #632ce4;
+      cursor: pointer;
+  }
 
 `;
 
