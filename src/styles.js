@@ -1,5 +1,10 @@
 import styled from "styled-components";
 
+
+export const StyledLanding = styled.main`
+
+`;
+
 // export const StyledBody = styled.body`
 //     background-color: blue;
 // `;
@@ -12,6 +17,7 @@ export const StyledHeader = styled.header`
     padding-left: 1rem;
     height: 5rem;
     background-color: rgba(0,0,0,0);
+    margin-left: 250px;
 
     nav {
         display: flex;
@@ -52,7 +58,8 @@ export const StyledMain = styled.main`
     background-image: ${props => props.chase ? `url(${props.chase})` : 'none'};
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top: 
+    border: 1px dotted red;
+    height: 400px;
     h1 {
         color: white;
     }
@@ -66,11 +73,19 @@ export const StyledFooter = styled.footer`
     justify-content: center;
 `;
 
-export const StyledLanding = styled.main`
-
-`;
 
 export const StyledBanner = styled.main`
-    border: 1px dotted red;
-    display: block;
+    border: 1px solid black;
+    height: 400px;
+    /* width: 1600px; */
+    /* position: fixed; */
+    /* display: block; */
+    margin: -50px 0 0 250px;
+    /* margin-left: 250px; */
+`;
+
+export const StyledChat = styled.div`
+    border: 1px solid black;
+    color: white;
+    
 `;
