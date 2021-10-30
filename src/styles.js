@@ -70,3 +70,7 @@ export const StyledLanding = styled.main`
 
 `;
 
+export const StyledBanner = styled.main`
+    border: 1px dotted red;
+    display: block;
+`;
