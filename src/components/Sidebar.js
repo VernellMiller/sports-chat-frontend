@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
+// import { SidebarData } from "./SidebarData";
 
 
 const NavIcon = styled(Link)`
@@ -19,6 +20,13 @@ const SidebarNav = styled.nav`
     /* background-color: black; */
     width: 250px;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* position: fixed; */
+    top: 0;
+    left: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
+    transition: 350ms;
+    /* z-index: 10; */
 `;
 
 const SidebarWrap = styled.div`
@@ -28,19 +36,19 @@ const SidebarWrap = styled.div`
 
 const Sidebar = () => {
 
-    const [ sidebar, setSidebar ] = useState(false)
+    const [ sidebar, setSidebar ] = useState(false);
 
-    const ShowSidebar = () => setSidebar(!sidebar)
+    const showSidebar = () => setSidebar(!sidebar);
 
     return (
        <>
          <NavIcon to="#">
-            <FaIcons.FaBars />
+            <FaIcons.FaBars onClick={showSidebar} />
         </NavIcon>
-        <SidebarNav>
+        <SidebarNav sidebar={sidebar}>
             <SidebarWrap>
                 <NavIcon to="#">
-                    <AiIcons.AiOutlineClose />
+                    <AiIcons.AiOutlineClose onClick={showSidebar}/>
                 </NavIcon>
             </SidebarWrap>
             
