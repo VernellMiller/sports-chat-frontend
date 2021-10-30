@@ -31,16 +31,16 @@ function App() {
     <>
       <Header user={user}/>
       <Sidebar />
-        <Switch>
-          <Route exact path="/">
-            <Main />
-          </Route>
-          <Route path="/landing">
-            <Landing />
-          </Route>
-        </Switch>
+      <Banner />
+      <Switch>
+        <Route exact path="/">
+          <Main />
+        </Route>
+        <Route path="/landing">
+          <Landing />
+        </Route>
+      </Switch>
       <Footer />
-      {/* <Banner /> */}
     </>
   );
 }
