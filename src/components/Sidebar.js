@@ -12,11 +12,9 @@ const NavIcon = styled(Link)`
 const Sidebar = () => {
     return (
        <>
-       
-            <NavIcon to="#">
-                <FaIcons.FaBars />
-
-            </NavIcon>
+         <NavIcon to="#">
+            <FaIcons.FaBars />
+        </NavIcon>
         
        </>
     )
