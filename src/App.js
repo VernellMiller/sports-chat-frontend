@@ -29,18 +29,18 @@ function App() {
 
   return (
     <>
-    <Header user={user}/>
-      <Switch>
-        <Route exact path="/">
-          <Sidebar />
-          <Main />
-        </Route>
-        <Route path="/landing">
-          <Landing />
-        </Route>
-      </Switch>
-    <Footer />
-    {/* <Banner /> */}
+      <Sidebar />
+      <Header user={user}/>
+        <Switch>
+          <Route exact path="/">
+            <Main />
+          </Route>
+          <Route path="/landing">
+            <Landing />
+          </Route>
+        </Switch>
+      <Footer />
+      {/* <Banner /> */}
     </>
   );
 }

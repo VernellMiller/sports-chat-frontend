@@ -1,11 +1,14 @@
 import styled from "styled-components";
 
-
+// export const StyledBody = styled.body`
+//     background-color: blue;
+// `;
 
 export const StyledHeader = styled.header`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* position: fixed; */
     padding-left: 1rem;
     height: 5rem;
     background-color: rgba(0,0,0,0);
