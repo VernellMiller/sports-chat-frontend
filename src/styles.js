@@ -89,3 +89,10 @@ export const StyledChat = styled.div`
     color: white;
     
 `;
+
+export const StyledContent = styled.div`
+    border: 1px solid black;
+    height: 400px;
+    margin: 0px 0 0 300px;
+    overflow: auto;
+`;
