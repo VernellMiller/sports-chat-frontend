@@ -84,15 +84,17 @@ export const StyledBanner = styled.main`
     /* margin-left: 250px; */
 `;
 
-export const StyledChat = styled.div`
-    border: 1px solid black;
-    color: white;
-    
-`;
-
 export const StyledContent = styled.div`
     border: 1px solid black;
-    height: 400px;
+    height: 688px;
     margin: 0px 0 0 300px;
     overflow: auto;
 `;
+
+export const StyledChat = styled.div`
+    border: 1px solid black;
+    margin: 0px 50px 0 1300px;
+    height: 572px;
+    
+`;
+

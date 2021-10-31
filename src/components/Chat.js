@@ -2,9 +2,9 @@ import { StyledChat } from "../styles";
 
 const Chat = (props) => {
     return (
-        <div>
+        <StyledChat>
             <h1>Chat</h1>
-        </div>
+        </StyledChat>
     );
 };
 
