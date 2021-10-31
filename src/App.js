@@ -33,7 +33,8 @@ function App() {
     <Header user={user}/>
       <Sidebar />
       <Banner />
-    <Main />
+      <Main />
+
       <Switch>
         <Route exact path="/">
         </Route>
@@ -41,6 +42,7 @@ function App() {
           <Landing />
         </Route>
       </Switch>
+      
       <Footer />
     </>
   );

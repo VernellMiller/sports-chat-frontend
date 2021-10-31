@@ -6,6 +6,7 @@ const Content = (props) => {
         <StyledContent>
             <>
             <h1>Content</h1>
+            <article className="cards">the</article>
             <Chat />
             </>
         </StyledContent>

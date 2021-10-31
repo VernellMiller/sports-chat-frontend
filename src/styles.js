@@ -89,12 +89,41 @@ export const StyledContent = styled.div`
     height: 688px;
     margin: 0px 0 0 300px;
     overflow: auto;
+    
+    .cards {
+        width: 50px;
+        height: 50px;
+    }
 `;
 
 export const StyledChat = styled.div`
     border: 1px solid black;
     margin: 0px 50px 0 1300px;
     height: 572px;
+
+    article {
+        border: 1px solid black;
+        height: 434px;
+    }
+
+    input {
+        background: none;
+        border: none;
+        background-color: #DCDCDC;
+        
+        width: 400px;
+        height: 50px;
+        padding: 0;
+      
+    }
+    
+    button {
+        margin-right: -100px;
+        height: 50px;
+        border: none;
+        background: none;
+        background-color: #DCDCDC;
+    }
     
 `;
 
