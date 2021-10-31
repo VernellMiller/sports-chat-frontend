@@ -30,10 +30,10 @@ function App() {
 
   return (
     <>
-      <Header user={user}/>
+    <Header user={user}/>
       <Sidebar />
       <Banner />
-          <Main />
+    <Main />
       <Chat />
       <Switch>
         <Route exact path="/">

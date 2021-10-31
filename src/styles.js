@@ -17,7 +17,7 @@ export const StyledHeader = styled.header`
     padding-left: 1rem;
     height: 5rem;
     background-color: rgba(0,0,0,0);
-    margin-left: 250px;
+    margin-left: 285px;
 
     nav {
         display: flex;
@@ -80,7 +80,7 @@ export const StyledBanner = styled.main`
     /* width: 1600px; */
     /* position: fixed; */
     /* display: block; */
-    margin: -50px 0 0 250px;
+    margin: -50px 0 0 300px;
     /* margin-left: 250px; */
 `;
 
