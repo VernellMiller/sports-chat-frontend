@@ -1,9 +1,11 @@
-const Main = (props) => {
+import { StyledContent } from "../styles";
+
+const Content = (props) => {
     return (
-        <main>
-            <h1>Main</h1>
-        </main>
+        <StyledContent>
+            <h1>Content</h1>
+        </StyledContent>
     );
 };
 
-export default Main;
+export default Content;
