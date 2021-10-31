@@ -3,6 +3,8 @@ import "firebase/firebase-auth";
 import "firebase/firebase-firestore";
 
 
+
+
 const firebaseConfig = {
     apiKey: "AIzaSyDhXy1oVIJR9BaKeBJLPG-WuQSkk6CCZNg",
     authDomain: "sports-chat-d6a85.firebaseapp.com",
@@ -17,6 +19,8 @@ firebase.initializeApp(firebaseConfig);
 // set up auth
 const auth = firebase.auth();
 const provider = new firebase.auth.GoogleAuthProvider()
+const db = firebase.firestore();
+
 
 
 function signIn() {
@@ -31,7 +35,8 @@ function logOut() {
 export {
     auth,
     signIn,
-    logOut
+    logOut,
+    db
 }
 
   
