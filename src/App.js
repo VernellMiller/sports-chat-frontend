@@ -34,7 +34,6 @@ function App() {
       <Sidebar />
       <Banner />
     <Main />
-      <Chat />
       <Switch>
         <Route exact path="/">
         </Route>
