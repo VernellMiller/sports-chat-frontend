@@ -47,6 +47,9 @@ export const StyledHeader = styled.header`
         height: 600px;
         
     }
+    h1 {
+        color: #632ce4;
+    }
 `;
 
 export const StyledMain = styled.main`
@@ -86,6 +89,7 @@ export const StyledBanner = styled.main`
 
 export const StyledContent = styled.div`
     border: 1px solid black;
+    color: #632ce4;
     height: 688px;
     margin: 0px 0 0 300px;
     overflow: auto;
