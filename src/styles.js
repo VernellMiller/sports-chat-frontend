@@ -80,6 +80,7 @@ export const StyledFooter = styled.footer`
 export const StyledBanner = styled.main`
     border: 1px solid black;
     height: 400px;
+    box-shadow: 1px 1px 5px 3px #808080;
     /* width: 1600px; */
     /* position: fixed; */
     /* display: block; */
@@ -131,3 +132,19 @@ export const StyledChat = styled.div`
     
 `;
 
+export const StyledCards = styled.article`
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    article {
+        border: 4px dotted black;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        margin: 1rem;
+        width: 18.75rem;
+        height: 15.375rem;
+        border-radius: 7px;
+
+    }
+`;
