@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import Banner from "./components/Banner";
 import Sidebar from "./components/Sidebar";
 import Chat from "./components/Chat";
+import Cards from "./components/Cards";
 
 import Landing from "./pages/Landing";
 import Main from "./pages/Main";
@@ -34,7 +35,6 @@ function App() {
       <Sidebar />
       <Banner />
       <Main />
-
       <Switch>
         <Route exact path="/">
         </Route>
