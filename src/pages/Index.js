@@ -1,7 +1,14 @@
 import { Link } from "react-router-dom";
-import React from 'react'
+import React, { useState } from 'react';
 
-const index = (props) => {
+const Index = (props) => {
+
+const [newFrom, setNewForm ] = useState({
+    image: "",
+    firstName: "",
+    lastName: "",
+    position: "",
+});
 
 const loaded = () => {
     return props.players.map(player => (
@@ -18,7 +25,51 @@ const loaded = () => {
 
 const loading = () => <h3>Loading...</h3>
 
-    return props.players ? loaded() : loading();
+// form helper functions
+
+const handleChange = () => {
+
 };
 
-export default index
+const handleSubmit = () => {
+
+};
+
+    return (
+        <section>
+            <form>
+                <input 
+                value={newFrom.image} 
+                onChange={handleChange}
+                type="text"
+                placeholder="Image"
+                name="image" 
+                />
+                <input
+                 value={newFrom.firstName} 
+                 onChange={handleChange}
+                 type="text"
+                 placeholder="First Name"
+                 name="firstName" 
+                 />
+                <input
+                 value={newFrom.lastName} 
+                 onChange={handleChange}
+                 type="text"
+                 placeholder="Last Name"
+                 name="lastName" 
+                 />
+                <input 
+                value={newFrom.position} 
+                onChange={handleChange}
+                placeholder="Position"
+                name="position"
+                />
+                <input type="submit" value="Create Player" />
+            </form>
+            { props.players ? loaded() : loading() }
+        </section>
+    );
+};
+
+export default Index
