@@ -3,12 +3,7 @@ import React, { useState } from 'react';
 
 const Index = (props) => {
 
-const [newFrom, setNewForm ] = useState({
-    image: "",
-    firstName: "",
-    lastName: "",
-    position: "",
-});
+const [newFrom, setNewForm ] = useState(getNewState());
 
 const loaded = () => {
     return props.players.map(player => (
@@ -36,8 +31,19 @@ const handleChange = (event) => {
     ))
 };
 
-const handleSubmit = () => {
+const handleSubmit = (event) => {
+    event.preventDefault();
+    props.createPlayers(newFrom);
+    setNewForm(getNewState());
+};
 
+function getNewState() {
+    return {
+        image: "",
+        firstName: "",
+        lastName: "",
+        position: "",
+    }
 };
 
     return (
