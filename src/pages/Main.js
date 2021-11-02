@@ -10,16 +10,15 @@ const Content = (props) => {
         <StyledContent>
             <>
                 <h1>Players</h1>
-            <Switch>
-                <Route exact path="/">
-                    <Index /> 
-                </Route>
-                <Route path="/players/:id" render={(props) => (
-                    <Show {...props} /> 
-                )} >
-
-                </Route>
-            </Switch>
+                <Switch>
+                    <Route exact path="/">
+                        <Index /> 
+                    </Route>
+                    <Route path="/players/:id" render={(props) => (
+                        <Show {...props} /> 
+                    )} >
+                    </Route>
+                </Switch>
             </>
         </StyledContent>
     );
