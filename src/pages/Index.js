@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 const Index = (props) => {
 
-const [newFrom, setNewForm ] = useState(getNewState());
+const [newForm, setNewForm ] = useState(getNewState());
 
 const loaded = () => {
     return props.players.map(player => (
@@ -11,16 +11,14 @@ const loaded = () => {
             {/* <link to={`/players/${player._id}`}>
             </link> */}
             <img style={{height: 50, borderRadius: "50%"}} src={player.image} alt={player.name} />
-                <h3>{player.firstName} {player.lastName}</h3>
+            <h3>{player.firstName} {player.lastName}</h3>
             <p>{player.position}</p>
         </div>
     ));
 };
 
 const loading = () => <h3>Loading...</h3>
-
 // form helper functions
-
 const handleChange = (event) => {
     setNewForm(prevState => ({
         ...prevState,
@@ -32,7 +30,7 @@ const handleChange = (event) => {
 
 const handleSubmit = (event) => {
     event.preventDefault();
-    props.createPlayers(newFrom);
+    props.createPlayers(newForm);
     setNewForm(getNewState());
 };
 
@@ -49,28 +47,28 @@ function getNewState() {
         <section>
             <form className="Form" onSubmit={handleSubmit}>
                 <input 
-                value={newFrom.image} 
+                value={newForm.image} 
                 onChange={handleChange}
                 type="text"
                 placeholder="Image"
                 name="image" 
                 />
                 <input
-                 value={newFrom.firstName} 
+                 value={newForm.firstName} 
                  onChange={handleChange}
                  type="text"
                  placeholder="First Name"
                  name="firstName" 
                  />
                 <input
-                 value={newFrom.lastName} 
+                 value={newForm.lastName} 
                  onChange={handleChange}
                  type="text"
                  placeholder="Last Name"
                  name="lastName" 
                  />
                 <input 
-                value={newFrom.position} 
+                value={newForm.position} 
                 onChange={handleChange}
                 placeholder="Position"
                 name="position"
