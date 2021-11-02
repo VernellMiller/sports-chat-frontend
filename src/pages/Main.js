@@ -28,6 +28,7 @@ const Content = (props) => {
             },
             body: JSON.stringify(player)
         });
+        getPlayers();
     };
 
     useEffect(() => getPlayers(), []);
@@ -43,6 +44,9 @@ const Content = (props) => {
                     <Route path="/players/:id" render={(props) => (
                         <Show {...props} /> 
                     )} >
+                    </Route>
+                    <Route path="/teams/:teamid">
+                        <Show players={players} createPlayers={createPlayers}/>
                     </Route>
                 </Switch>
             </>
