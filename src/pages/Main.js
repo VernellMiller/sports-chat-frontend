@@ -35,7 +35,7 @@ const Content = (props) => {
     return (
         <StyledContent>
             <>
-                <h1>Players</h1>
+                <h1>Created Players</h1>
                 <Switch>
                     <Route exact path="/">
                         <Index players={players} createPlayers={createPlayers}/> 
