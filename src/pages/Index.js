@@ -27,8 +27,13 @@ const loading = () => <h3>Loading...</h3>
 
 // form helper functions
 
-const handleChange = () => {
+const handleChange = (event) => {
+    setNewForm(prevState => ({
+        ...prevState,
+        [event.target.name]: event.target.value
 
+        }
+    ))
 };
 
 const handleSubmit = () => {
