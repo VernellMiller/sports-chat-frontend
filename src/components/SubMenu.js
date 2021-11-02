@@ -46,7 +46,7 @@ const SubMenu = ({item}) => {
 console.log(item);
 
     const [ showSubNav, setShowSubNav ] = useState(false)
-// console.log(subnav);
+// console.log(subNav);
     const handleClick = () => item.subNav && setShowSubNav(!showSubNav)
 
     return (
