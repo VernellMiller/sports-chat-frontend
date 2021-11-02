@@ -17,7 +17,6 @@ const loaded = () => {
     ));
 };
 
-
 const loading = () => <h3>Loading...</h3>
 
 // form helper functions
@@ -48,7 +47,7 @@ function getNewState() {
 
     return (
         <section>
-            <form>
+            <form className="Form" onSubmit={handleSubmit}>
                 <input 
                 value={newFrom.image} 
                 onChange={handleChange}
