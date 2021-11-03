@@ -5,10 +5,6 @@ export const StyledLanding = styled.main`
 
 `;
 
-// export const StyledBody = styled.body`
-//     background-color: blue;
-// `;
-
 export const StyledHeader = styled.header`
     display: flex;
     align-items: center;
@@ -24,7 +20,11 @@ export const StyledHeader = styled.header`
         color: #AFAFAB;
         padding: 10px 100px;
         border-radius: 50px;
-        margin-left: -600px;
+        margin-left: -205px;
+    }
+
+    .headercons {
+        margin-right: -500px;
     }
 
     nav {
@@ -39,7 +39,8 @@ export const StyledHeader = styled.header`
                 font-weight: 700;
                 img {
                     height: 50px;
-                    border-radius: 50%
+                    border-radius: 50%;
+                    margin-top: -19px;
                 }
                 a {
                     text-decoration: none;
@@ -78,7 +79,9 @@ export const StyledMain = styled.main`
 `;
 
 export const StyledBanner = styled.main`
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    border-radius: 20px;
+    width: 1400px;
     height: 400px;
     box-shadow: 1px 1px 5px 3px #E2E2DE;
     /* width: 1600px; */
@@ -86,17 +89,20 @@ export const StyledBanner = styled.main`
     /* display: block; */
     margin: -50px 0 0 350px;
     /* margin-left: 250px; */
-`;
+    `;
 
 export const StyledTitle = styled.div`
     margin: 0 0 0 353px;
-`;
+    `;
 
 export const StyledContent = styled.div`
     /* border: 1px solid black; */
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px 3px #E2E2DE;
     color: #2262C6;
+    width: 1400px;
     height: 688px;
-    margin: 50px 0 0 353px;
+    margin: 15px 0 0 353px;
     overflow: auto;
     
     .cards {
@@ -154,13 +160,14 @@ export const StyledCards = styled.article`
 `;
 
 export const StyledSection = styled.section`
-    
+    width: 1300px;
+    margin-left: 30px;
 
     .player {
         border-bottom: 1px solid #E2E2DE;
         display: flex;
         margin-bottom: -20px;
-        padding: 10px 5px 0px 5px;
+        padding: 10px 50px 0px 20px;
         color: black;
 
         p {

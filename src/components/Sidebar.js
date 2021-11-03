@@ -22,9 +22,9 @@ const SidebarNav = styled.nav`
     /* border-right: 1px solid black; */
     background-color: #2262C6;
     width: 300px;
-    height: 100vh;
+    height: 1180px;
     margin-top: 100px;
-    border-radius: 0 50px 0 0;
+    border-radius: 0 20px 20px 0;
     display: flex;
     justify-content: center;
     position: fixed;

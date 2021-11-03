@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { logOut } from "../services/firebase";
 import { StyledHeader } from "../styles.js";
 import * as AiIcons from "react-icons/ai";
+import * as HiIcons from "react-icons/hi";
 
 
 const Header = (props) => {
@@ -10,7 +11,10 @@ const Header = (props) => {
         <StyledHeader>
             <h1>TEAM BUILDER</h1>
             <div className="search"><AiIcons.AiOutlineFileSearch/>Search</div>
+            <div className="headercons">
             <AiIcons.AiFillBell style={{color: "#2262C6"}}/>
+            <HiIcons.HiDotsHorizontal style={{color: "#2262C6"}}/>
+            </div>
             <nav>
                 <ul>
                     {
