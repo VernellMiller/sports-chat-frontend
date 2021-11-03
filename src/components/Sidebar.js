@@ -9,6 +9,7 @@ import SubMenu from "./SubMenu";
 
 
 const NavIcon = styled(Link)`
+    color: white;
     margin-left:2rem;
     font-size: 2rem;
     height: 80px;
@@ -18,10 +19,12 @@ const NavIcon = styled(Link)`
 `;
 
 const SidebarNav = styled.nav`
-    border-right: 1px solid black;
-    background-color: white;
+    /* border-right: 1px solid black; */
+    background-color: #2262C6;
     width: 300px;
     height: 100vh;
+    margin-top: 100px;
+    border-radius: 0 50px 0 0;
     display: flex;
     justify-content: center;
     position: fixed;

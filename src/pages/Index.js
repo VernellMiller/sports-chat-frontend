@@ -45,7 +45,7 @@ function getNewState() {
 
     return (
         <section>
-            <form className="Form" onSubmit={handleSubmit}>
+            {/* <form className="Form" onSubmit={handleSubmit}>
                 <input 
                 value={newForm.image} 
                 onChange={handleChange}
@@ -74,7 +74,7 @@ function getNewState() {
                 name="position"
                 />
                 <input type="submit" value="Create Player" />
-            </form>
+            </form> */}
             { props.players ? loaded() : loading() }
         </section>
     );

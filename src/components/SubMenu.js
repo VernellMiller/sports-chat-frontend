@@ -5,9 +5,9 @@ import styled from 'styled-components';
 
 const SidebarLink = styled(Link)`
   display: flex;
-  color: black;
+  color: white;
   justify-content: space-between;
-  padding: 20px;
+  padding: 20px 20px 20px 35px;
   list-style: none;
   height: 60px;
   text-decoration: none;

@@ -17,7 +17,7 @@ export const StyledHeader = styled.header`
     padding-left: 1rem;
     height: 5rem;
     background-color: rgba(0,0,0,0);
-    margin-left: 285px;
+    margin-left: 335px;
 
     nav {
         display: flex;
@@ -48,7 +48,7 @@ export const StyledHeader = styled.header`
         
     }
     h1 {
-        color: #632ce4;
+        color: #2262C6;
     }
 `;
 
@@ -84,15 +84,15 @@ export const StyledBanner = styled.main`
     /* width: 1600px; */
     /* position: fixed; */
     /* display: block; */
-    margin: -50px 0 0 300px;
+    margin: -50px 0 0 350px;
     /* margin-left: 250px; */
 `;
 
 export const StyledContent = styled.div`
-    border: 1px solid black;
-    color: #632ce4;
+    /* border: 1px solid black; */
+    color: #2262C6;
     height: 688px;
-    margin: 0px 0 0 300px;
+    margin: 0px 0 0 350px;
     overflow: auto;
     
     .cards {
