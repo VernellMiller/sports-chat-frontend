@@ -19,6 +19,14 @@ export const StyledHeader = styled.header`
     background-color: rgba(0,0,0,0);
     /* margin-left: 335px; */
 
+    .search {
+        border: 1px solid #E2E2DE;
+        color: #AFAFAB;
+        padding: 10px 100px;
+        border-radius: 50px;
+        margin-left: -600px;
+    }
+
     nav {
         display: flex;
         align-items: center;
@@ -68,14 +76,6 @@ export const StyledMain = styled.main`
     }
 }
 `;
-
-export const StyledFooter = styled.footer`
-    display: flex;
-    align-items: center;
-    height: 5rem;
-    justify-content: center;
-`;
-
 
 export const StyledBanner = styled.main`
     border: 1px solid black;
@@ -159,8 +159,8 @@ export const StyledSection = styled.section`
     .player {
         border-bottom: 1px solid #E2E2DE;
         display: flex;
-        margin-top: 20px;
-        padding: 10px 5px 5px 5px;
+        margin-bottom: -20px;
+        padding: 10px 5px 0px 5px;
         color: black;
 
         p {
@@ -174,4 +174,11 @@ export const StyledSection = styled.section`
         cursor: pointer;
       }
     }
+`;
+
+export const StyledFooter = styled.footer`
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    justify-content: center;
 `;

@@ -2,12 +2,15 @@ import { Link } from "react-router-dom";
 // import styled from "styled-components";
 import { logOut } from "../services/firebase";
 import { StyledHeader } from "../styles.js";
+import * as AiIcons from "react-icons/ai";
 
 
 const Header = (props) => {
     return (
         <StyledHeader>
             <h1>TEAM BUILDER</h1>
+            <div className="search"><AiIcons.AiOutlineFileSearch/>Search</div>
+            <AiIcons.AiFillBell style={{color: "#2262C6"}}/>
             <nav>
                 <ul>
                     {
