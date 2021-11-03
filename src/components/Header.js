@@ -7,7 +7,7 @@ import { StyledHeader } from "../styles.js";
 const Header = (props) => {
     return (
         <StyledHeader>
-            <h1>Sports Chat</h1>
+            <h1>TEAM BUILDER</h1>
             <nav>
                 <ul>
                     {
