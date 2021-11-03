@@ -17,7 +17,7 @@ export const StyledHeader = styled.header`
     padding-left: 1rem;
     height: 5rem;
     background-color: rgba(0,0,0,0);
-    margin-left: 335px;
+    /* margin-left: 335px; */
 
     nav {
         display: flex;
@@ -80,7 +80,7 @@ export const StyledFooter = styled.footer`
 export const StyledBanner = styled.main`
     border: 1px solid black;
     height: 400px;
-    box-shadow: 1px 1px 5px 3px #808080;
+    box-shadow: 1px 1px 5px 3px #E2E2DE;
     /* width: 1600px; */
     /* position: fixed; */
     /* display: block; */
@@ -88,11 +88,15 @@ export const StyledBanner = styled.main`
     /* margin-left: 250px; */
 `;
 
+export const StyledTitle = styled.div`
+    margin: 0 0 0 353px;
+`;
+
 export const StyledContent = styled.div`
     /* border: 1px solid black; */
     color: #2262C6;
     height: 688px;
-    margin: 0px 0 0 350px;
+    margin: 50px 0 0 353px;
     overflow: auto;
     
     .cards {
@@ -146,5 +150,28 @@ export const StyledCards = styled.article`
         height: 15.375rem;
         border-radius: 7px;
 
+    }
+`;
+
+export const StyledSection = styled.section`
+    
+
+    .player {
+        border-bottom: 1px solid #E2E2DE;
+        display: flex;
+        margin-top: 20px;
+        padding: 10px 5px 5px 5px;
+        color: black;
+
+        p {
+            color: #E2E2DE;
+        }
+        img {
+            padding-top: 15px;
+        }
+        &:hover {
+        /* background: #2262C6; */
+        cursor: pointer;
+      }
     }
 `;
