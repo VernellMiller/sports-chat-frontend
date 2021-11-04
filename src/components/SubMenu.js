@@ -53,6 +53,7 @@ console.log(item);
     const handleClick = () => item.subNav && setShowSubNav(!showSubNav)
 
     return (
+     
       <>
         <SidebarLink to={item.path} onClick={handleClick}>
         <div>
@@ -64,14 +65,14 @@ console.log(item);
         </div>
         </SidebarLink>
         {showSubNav && item.subNav.map((item, index) => {
-            return (
-                <DropdownLink to={item.path} key={index}>
+          return (
+            <DropdownLink to={item.path} key={index}>
                     {item.icon}
                     <SidebarLabel>{item.title}</SidebarLabel>
                 </DropdownLink>
             )
             return item.title
-        })}
+          })}
       </>
     );
   };

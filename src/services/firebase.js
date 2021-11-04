@@ -2,9 +2,6 @@ import firebase from "firebase/app";
 import "firebase/firebase-auth";
 import "firebase/firebase-firestore";
 
-
-
-
 const firebaseConfig = {
     apiKey: "AIzaSyDhXy1oVIJR9BaKeBJLPG-WuQSkk6CCZNg",
     authDomain: "sports-chat-d6a85.firebaseapp.com",
