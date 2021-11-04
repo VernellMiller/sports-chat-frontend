@@ -1,5 +1,6 @@
 import { Link, useParams } from "react-router-dom";
 import React, { useState } from 'react';
+import { StyledSection } from "../styles";
 
 
 const Show = (props) => {
@@ -55,7 +56,7 @@ function getNewState() {
 };
 
     return (
-        <section>
+        <StyledSection>
             <form className="Form" onSubmit={handleSubmit}>
                 <input 
                 value={newForm.image} 
@@ -87,7 +88,7 @@ function getNewState() {
                 <input type="submit" value="Create Player" />
             </form>
             { props.players ? loaded() : loading() }
-        </section>
+        </StyledSection>
     );
 };
 
