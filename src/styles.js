@@ -13,7 +13,7 @@ export const StyledHeader = styled.header`
     padding-left: 1rem;
     height: 5rem;
     background-color: rgba(0,0,0,0);
-    /* margin-left: 335px; */
+    margin-right: 60px;
 
     .search {
         border: 1px solid #E2E2DE;
@@ -87,7 +87,7 @@ export const StyledBanner = styled.main`
     /* width: 1600px; */
     /* position: fixed; */
     /* display: block; */
-    margin: -50px 0 0 350px;
+    margin: -58px 0 0 350px;
     /* margin-left: 250px; */
     `;
 

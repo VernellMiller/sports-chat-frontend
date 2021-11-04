@@ -9,7 +9,8 @@ import SubMenu from "./SubMenu";
 
 
 const NavIcon = styled(Link)`
-    color: white;
+    color: #2262C6;
+    border-color: 1px solid #2262C6;
     margin-left:2rem;
     font-size: 2rem;
     height: 80px;
@@ -22,7 +23,7 @@ const SidebarNav = styled.nav`
     /* border-right: 1px solid black; */
     background-color: #2262C6;
     width: 300px;
-    height: 1180px;
+    height: 1172px;
     margin-top: 100px;
     border-radius: 0 20px 20px 0;
     display: flex;
@@ -46,7 +47,7 @@ const Sidebar = () => {
     const showSidebar = () => setSidebar(!sidebar);
 
     return (
-       <>
+        <>
          <NavIcon to="#">
             <FaIcons.FaBars onClick={showSidebar}/>
         </NavIcon>
