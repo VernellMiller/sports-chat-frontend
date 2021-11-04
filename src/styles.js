@@ -1,4 +1,6 @@
+import { RiBodyScanFill } from "react-icons/ri";
 import styled from "styled-components";
+
 
 
 export const StyledLanding = styled.main`
@@ -79,6 +81,8 @@ export const StyledMain = styled.main`
 `;
 
 export const StyledBanner = styled.main`
+    display: flex;
+    justify-content: center;
     /* border: 1px solid black; */
     border-radius: 20px;
     width: 1400px;
@@ -89,6 +93,16 @@ export const StyledBanner = styled.main`
     /* display: block; */
     margin: -58px 0 0 350px;
     /* margin-left: 250px; */
+    .team {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* align-content: center; */
+        font-size: 100px;
+        color: #F55F47;
+        
+    }
+    
     `;
 
 export const StyledTitle = styled.div`
