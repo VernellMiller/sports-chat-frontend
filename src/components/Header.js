@@ -9,7 +9,10 @@ import * as HiIcons from "react-icons/hi";
 const Header = (props) => {
     return (
         <StyledHeader>
-            <h1>TEAM BUILDER</h1>
+            <Link className="head" to="/">
+                <h1>TEAM BUILDER</h1>
+            </Link>
+            
             <div className="search"><AiIcons.AiOutlineFileSearch/>Search</div>
             <div className="headercons">
             <AiIcons.AiFillBell style={{color: "#2262C6"}}/>
