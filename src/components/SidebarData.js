@@ -8,7 +8,7 @@ import * as MdIcons from "react-icons/md";
 export const SidebarData = [
     {
         title: "NBA",
-        path: "/teams",
+        path: "",
         icon: <MdIcons.MdOutlineSportsBasketball />,
         iconClosed: <RiIcons.RiArrowDownSFill />,
         iconOpen: <RiIcons.RiArrowUpFill />,
