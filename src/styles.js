@@ -118,6 +118,10 @@ export const StyledContent = styled.div`
     height: 688px;
     margin: 15px 0 0 353px;
     overflow: auto;
+
+    .Form {
+        margin-top: 20px;
+    }
     
     .cards {
         width: 50px;
@@ -180,10 +184,14 @@ export const StyledSection = styled.section`
     .player {
         border-bottom: 1px solid #E2E2DE;
         display: flex;
-        margin-bottom: -20px;
+        /* justify-content: space-around; */
+        align-items: center
+        /* margin-bottom: -20px; */
         padding: 10px 50px 0px 20px;
         color: black;
-
+        h3 {
+            color: #F55F47;
+        }
         p {
             color: #E2E2DE;
         }
