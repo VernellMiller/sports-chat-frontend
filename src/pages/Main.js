@@ -10,7 +10,8 @@ const Content = (props) => {
 
     const [ players, setPlayers ] = useState(null);
 
-    const BASE_URL = "http://localhost:3001/players/";
+    // const BASE_URL = "http://localhost:3001/players/";
+    const BASE_URL = "https://team-creation.herokuapp.com/players/";
 
     // helper functions
     const getPlayers = async () => {
