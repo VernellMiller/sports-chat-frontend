@@ -16,6 +16,11 @@ export const StyledHeader = styled.header`
     height: 5rem;
     background-color: rgba(0,0,0,0);
     margin-right: 60px;
+    
+    .head {
+
+        text-decoration: none;
+    }
 
     .search {
         border: 1px solid #E2E2DE;
@@ -77,7 +82,7 @@ export const StyledMain = styled.main`
     h1 {
         color: white;
     }
-}
+
 `;
 
 export const StyledBanner = styled.main`
@@ -103,7 +108,7 @@ export const StyledBanner = styled.main`
         
     }
     
-    `;
+`;
 
 export const StyledTitle = styled.div`
     margin: 0 0 0 353px;
@@ -122,7 +127,7 @@ export const StyledContent = styled.div`
     .Form {
         margin-top: 20px;
     }
-    
+
     .cards {
         width: 50px;
         height: 50px;
@@ -181,6 +186,12 @@ export const StyledSection = styled.section`
     width: 1300px;
     margin-left: 30px;
 
+    table, td {
+        border: 1px solid black;
+        width: 100%;
+        /* display: flex; */
+    }
+
     .player {
         border-bottom: 1px solid #E2E2DE;
         display: flex;
@@ -188,12 +199,12 @@ export const StyledSection = styled.section`
         align-items: center
         /* margin-bottom: -20px; */
         padding: 10px 50px 0px 20px;
-        color: black;
+        /* color: black; */
         h3 {
             color: #F55F47;
         }
         p {
-            color: #E2E2DE;
+            color: #A3A3A0;
         }
         img {
             padding-top: 15px;
