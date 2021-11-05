@@ -8,13 +8,23 @@ const [newForm, setNewForm ] = useState(getNewState());
 
 const loaded = () => {
     return props.players.map(player => (
-        <div key={player._id} className="player">
-            {/* <link to={`/players/${player._id}`}>
-            </link> */}
-            <img style={{height: 50, borderRadius: "50%"}} src={player.image} alt={player.name} />
-            <h3>{player.firstName} {player.lastName}</h3>
-            <p>{player.position}</p>
-        </div>
+        <table>
+        <tbody>
+            <tr key={player._id} className="player">
+                {/* <link to={`/players/${player._id}`}>
+                </link> */}
+                <td>
+                    <img style={{height: 50, borderRadius: "50%"}} src={player.image} alt={player.name} />
+                </td>
+                <td>
+                     <h3>{player.firstName} {player.lastName}</h3>
+                </td>
+                <td>
+                    <p>{player.position}</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
     ));
 };
 
