@@ -112,8 +112,9 @@ export const StyledBanner = styled.main`
 `;
 
 export const StyledTitle = styled.div`
+    color: #2262C6;
     margin: 0 0 0 353px;
-    `;
+`;
 
 export const StyledContent = styled.div`
     /* border: 1px solid black; */
