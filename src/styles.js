@@ -18,7 +18,6 @@ export const StyledHeader = styled.header`
     margin-right: 60px;
     
     .head {
-
         text-decoration: none;
     }
 
@@ -32,6 +31,7 @@ export const StyledHeader = styled.header`
 
     .headercons {
         margin-right: -500px;
+        color: #F55F47;
     }
 
     nav {
@@ -82,6 +82,7 @@ export const StyledMain = styled.main`
     h1 {
         color: white;
     }
+
 
 `;
 
@@ -187,7 +188,7 @@ export const StyledSection = styled.section`
     margin-left: 30px;
 
     table, td {
-        border: 1px solid black;
+        /* border: 1px solid black; */
         width: 100%;
         /* display: flex; */
     }
@@ -196,9 +197,9 @@ export const StyledSection = styled.section`
         border-bottom: 1px solid #E2E2DE;
         display: flex;
         /* justify-content: space-around; */
-        align-items: center
+        /* align-items: center; */
         /* margin-bottom: -20px; */
-        padding: 10px 50px 0px 20px;
+        /* padding: 10px 50px 0px 20px; */
         /* color: black; */
         h3 {
             color: #F55F47;
