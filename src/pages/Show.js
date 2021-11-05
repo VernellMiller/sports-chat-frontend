@@ -6,7 +6,7 @@ import { StyledSection } from "../styles";
 const Show = (props) => {
 
 let {teamid} = useParams();
-console.log(teamid);
+// console.log(teamid);
 
 const [newForm, setNewForm ] = useState(getNewState());
 
