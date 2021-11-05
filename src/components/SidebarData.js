@@ -169,7 +169,7 @@ export const SidebarData = [
     },
     {
         title: "MLB",
-        path: "/teams",
+        path: "",
         icon: <MdIcons.MdOutlineSportsBaseball />,
         iconClosed: <RiIcons.RiArrowDownSFill />,
         iconOpen: <RiIcons.RiArrowUpFill />,
@@ -339,7 +339,7 @@ export const SidebarData = [
     },
     {
         title: "EPL",
-        path: "/teams",
+        path: "",
         icon: <MdIcons.MdSportsSoccer />,
         iconClosed: <RiIcons.RiArrowDownSFill />,
         iconOpen: <RiIcons.RiArrowUpFill />,
@@ -450,7 +450,7 @@ export const SidebarData = [
     },
     {
         title: "NFL",
-        path: "/teams",
+        path: "",
         icon: <MdIcons.MdOutlineSportsFootball />,
         iconClosed: <RiIcons.RiArrowDownSFill />,
         iconOpen: <RiIcons.RiArrowUpFill />,
@@ -631,7 +631,7 @@ export const SidebarData = [
     },
     {
         title: "LIGUE 1",
-        path: "/teams",
+        path: "",
         icon: <MdIcons.MdSportsSoccer />,
         iconClosed: <RiIcons.RiArrowDownSFill />,
         iconOpen: <RiIcons.RiArrowUpFill />,
@@ -741,7 +741,7 @@ export const SidebarData = [
     },
     {
         title: "LALIGA",
-        path: "/teams",
+        path: "",
         icon: <MdIcons.MdSportsSoccer />,
         iconClosed: <RiIcons.RiArrowDownSFill />,
         iconOpen: <RiIcons.RiArrowUpFill />,
@@ -852,7 +852,7 @@ export const SidebarData = [
     },
     {
         title: "BUNDESLIGA",
-        path: "/teams",
+        path: "",
         icon: <MdIcons.MdSportsSoccer />,
         iconClosed: <RiIcons.RiArrowDownSFill />,
         iconOpen: <RiIcons.RiArrowUpFill />,
@@ -953,7 +953,7 @@ export const SidebarData = [
     },
     {
         title: "SERIE A",
-        path: "/teams",
+        path: "",
         icon: <MdIcons.MdSportsSoccer />,
         iconClosed: <RiIcons.RiArrowDownSFill />,
         iconOpen: <RiIcons.RiArrowUpFill />,
